@@ -239,6 +239,33 @@ public class EC2HardwareBuilder extends HardwareBuilder {
    }
 
    /**
+    * @see InstanceType#T2_MICRO
+    */
+   public static EC2HardwareBuilder t2_micro() {
+      return new EC2HardwareBuilder(InstanceType.T2_MICRO)
+            .ram(1024)
+            .processors(ImmutableList.of(new Processor(1.0, 0.1))).rootDeviceType(RootDeviceType.EBS);
+   }
+
+   /**
+    * @see InstanceType#T2_SMALL
+    */
+   public static EC2HardwareBuilder t2_small() {
+      return new EC2HardwareBuilder(InstanceType.T2_SMALL)
+            .ram(2048)
+            .processors(ImmutableList.of(new Processor(1.0, 0.2))).rootDeviceType(RootDeviceType.EBS);
+   }
+
+   /**
+    * @see InstanceType#T2_MEDIUM
+    */
+   public static EC2HardwareBuilder t2_medium() {
+      return new EC2HardwareBuilder(InstanceType.T2_MEDIUM)
+            .ram(4096)
+            .processors(ImmutableList.of(new Processor(1.0, 0.4))).rootDeviceType(RootDeviceType.EBS);
+   }
+
+   /**
     * @see InstanceType#M1_LARGE
     */
    public static EC2HardwareBuilder m1_large() {

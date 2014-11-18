@@ -40,6 +40,39 @@ public class InstanceType {
    public static final String T1_MICRO = "t1.micro";
 
    /**
+    * Micro Burstable Performance Instance
+    * <ul>
+    * <li>1 GB memory</li>
+    * <li>1 vCPU / 10% baseline performance</li>
+    * <li>No instance storage (EBS storage only)</li>
+    * <li>64-bit platform</li>
+    * </ul>
+    */
+   public static final String T2_MICRO = "t2.micro";
+
+   /**
+    * Micro Burstable Performance Instance
+    * <ul>
+    * <li>2 GB memory</li>
+    * <li>1 vCPU / 20% baseline performance</li>
+    * <li>No instance storage (EBS storage only)</li>
+    * <li>64-bit platform</li>
+    * </ul>
+    */
+   public static final String T2_SMALL = "t2.small";
+
+   /**
+    * Micro Burstable Performance Instance
+    * <ul>
+    * <li>4 GB memory</li>
+    * <li>2 vCPU / 40% baseline performance</li>
+    * <li>No instance storage (EBS storage only)</li>
+    * <li>64-bit platform</li>
+    * </ul>
+    */
+   public static final String T2_MEDIUM = "t2.medium";
+
+    /**
     * Small Instance
     * <ul>
     * <li>1.7 GB memory</li>
